@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Food from './Component/Food';
-import {HashRouter, Routes, Route, Link } from "react-router-dom";
+import {HashRouter,BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Breakfast  from './Component/Breakfast';
 import Lunch from './Component/Lunch';
 import Dinner from './Component/Dinner';
@@ -23,7 +23,8 @@ import Welcome from './Component/Welcome';
 function App() {
   return (
    <>
-  <HashRouter>
+   <div>
+
    <Routes>
    <Route path='/' element={<Dashboard/>}/>
    <Route path='/Food' element={<Food/>}/>
@@ -40,12 +41,12 @@ function App() {
    <Route path='Delivery' element={<DeliveryAddress/>}/>
    <Route path="/Break" element={<Breakfast></Breakfast>}/>
    <Route path="/Payment" element={<Payment/>}/>
-   <Route path='/Thanks' element={<Thanks/>}></Route>
-   <Route path='/Welcome' element={<Welcome/>}></Route>
+   <Route path='/Thanks' element={<Thanks/>}/>
+   <Route path='/Welcome' element={<Welcome/>}/>
 
    </Routes>
-   </HashRouter>
-     
+  
+   </div>
    </>
   );
 }
