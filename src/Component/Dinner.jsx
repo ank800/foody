@@ -6,6 +6,8 @@ import vchicken from './Images/vermicellichicken.webp'
 import bchicken from './Images/butterchicken.webp'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Header from './Header'
+import Footer from './Footer'
 
 
 const Dinner = () => {
@@ -60,6 +62,7 @@ const Dinner = () => {
   }
   return (
     <>
+    <Header/>
     <div className='bg-pink-300 h-fit sm:h-screen'>
     <h1 className='text-center mt-5 text-red-600 font-bold text-4xl'> Welcome to Dinner Order</h1>
     <div className='flex mt-5 w-full'>
@@ -125,6 +128,7 @@ const Dinner = () => {
       </div>
     </div>
     </div>
+    <Footer/>
 
     </>
   )

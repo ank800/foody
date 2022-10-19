@@ -4,6 +4,8 @@ import bchicken from './Images/butterchicken.webp'
 import mutton from './Images/muttonkorma.webp'
 import chickenfry from './Images/chickenfry.jpg'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
+import Header from './Header'
 
 
 const NonVegetarina = () => {
@@ -57,6 +59,9 @@ const NonVegetarina = () => {
     
   }
   return (
+    <>
+
+<Header/>
     <div className='bg-pink-300 h-fit sm:h-screen'>
     <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to NonVeg Food</h1>
     <div className='flex mt-5 w-full'>
@@ -130,6 +135,9 @@ const NonVegetarina = () => {
     </div>
 
   </div>
+  
+  <Footer/>
+  </>
   )
 }
 

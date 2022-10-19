@@ -5,6 +5,8 @@ import Rajma from './Images/Rajma.webp'
 import dosa from './Images/dosa.jpg'
 import { Link } from 'react-router-dom'
 import {useState} from 'react'
+import Header from './Header'
+import Footer from './Footer'
 const Lunch = () => {
   const items={dalmakhani:99, bhindi:49,Rajma:69,dosa:99}
   const [num,setnum]=useState(1)
@@ -59,6 +61,7 @@ const Lunch = () => {
    
 
     <>
+    <Header/>
     <div className='bg-pink-300 h-fit sm:h-screen'>
       <h1 className='text-center text-red-600 font-bold text-4xl'> Welcome to Lunch Order</h1>
       <div className='flex mt-5  w-full'>
@@ -127,6 +130,7 @@ const Lunch = () => {
     </div>
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

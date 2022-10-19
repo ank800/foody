@@ -3,6 +3,8 @@ import dosa from './Images/dosa.jpg'
 import puri from './Images/puri.webp'
 import sattu from './Images/sattu.webp'
 import { Link } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 const Breakfast = () => {
   const items={Pdosa:99,mdosa:125,ppratha:50,spratha:60}
@@ -55,7 +57,9 @@ const Breakfast = () => {
     
   }
   return (
-    <div className='bg-violet-800 h-fit sm:h-screen'>
+    <>
+    <Header/>
+    <div className='bg-pink-400 h-fit sm:h-screen'>
     <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to Breakfast</h1>
     {/* Flex for cards starting from here */}
     <div className='flex mt-5  w-full'>
@@ -122,6 +126,8 @@ const Breakfast = () => {
     </div>
       
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Food from './Component/Food';
-import {HashRouter,BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {HashRouter, Routes, Route } from "react-router-dom";
 import Breakfast  from './Component/Breakfast';
 import Lunch from './Component/Lunch';
 import Dinner from './Component/Dinner';

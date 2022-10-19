@@ -4,6 +4,8 @@ import jalebi from './Images/jalebi.jpg'
 import rasgulla from './Images/rasgulla.jpg'
 import sattu from './Images/sattu.webp'
 import { Link } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 const NorthIndian = () => {
   const items={malpua:149,jalebi:125,spratha:50,Rasgulla:29}
@@ -56,6 +58,9 @@ const NorthIndian = () => {
     
   }
   return (
+    <>
+<Header/>
+
     <div className='bg-pink-300 h-screen'>
     <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to North Indian Food</h1>
     <div className='flex mt-5 w-full'>
@@ -139,6 +144,8 @@ const NorthIndian = () => {
     </div>
 
   </div>
+  <Footer/>
+  </>
   )
 }
 

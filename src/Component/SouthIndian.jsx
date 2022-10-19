@@ -4,6 +4,8 @@ import idli from './Images/Idli.webp'
 import hbiryani from './Images/hbiryani.jpg'
 import chutney from './Images/coconutchutney.webp'
 import { Link } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 const SouthIndian = () => {
   const items={Dosa:99,Idli:49,biryani:99,chatni:29}
@@ -56,6 +58,9 @@ const SouthIndian = () => {
     
   }
   return (
+    <>
+      <Header/>
+    
     <div className='bg-pink-300 h-full sm:h-screen'>
     <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to Fast Food</h1>
     <div className='flex mt-5 w-full'>
@@ -148,6 +153,8 @@ const SouthIndian = () => {
     </div>
 
   </div>
+  <Footer/>
+  </>
   )
 }
 

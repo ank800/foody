@@ -5,6 +5,8 @@ import mbiryani from './Images/makhanibiryani.webp'
 import bhindi from './Images/bhindi.webp'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Header from './Header'
+import Footer from './Footer'
 
 const Vegetarian = () => {
   const items={paneer:149,chickenfry:125,mbiryani:50,bfry:149}
@@ -57,6 +59,9 @@ const Vegetarian = () => {
     
   }
   return (
+    <>
+<Header/>
+    
     <div className='bg-pink-300 h-fit sm:h-screen'>
     <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to Fast Food</h1>
     <div className='flex mt-5 w-full'>
@@ -127,6 +132,8 @@ const Vegetarian = () => {
     </div>
 
   </div>
+  <Footer/>
+  </>
   )
 }
 
