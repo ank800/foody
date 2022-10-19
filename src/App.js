@@ -24,7 +24,7 @@ function App() {
   return (
    <>
    <div>
-
+<HashRouter>
    <Routes>
    <Route path='/' element={<Dashboard/>}/>
    <Route path='/Food' element={<Food/>}/>
@@ -45,6 +45,7 @@ function App() {
    <Route path='/Welcome' element={<Welcome/>}/>
 
    </Routes>
+   </HashRouter>
   
    </div>
    </>
