@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Food from './Component/Food';
-import { Routes, Route, Link } from "react-router-dom";
+import {HashRouter, Routes, Route, Link } from "react-router-dom";
 import Breakfast  from './Component/Breakfast';
 import Lunch from './Component/Lunch';
 import Dinner from './Component/Dinner';
@@ -23,7 +23,7 @@ import Welcome from './Component/Welcome';
 function App() {
   return (
    <>
-  
+  <HashRouter>
    <Routes>
    <Route path='/' element={<Dashboard/>}/>
    <Route path='/Food' element={<Food/>}/>
@@ -44,6 +44,7 @@ function App() {
    <Route path='/Welcome' element={<Welcome/>}></Route>
 
    </Routes>
+   </HashRouter>
      
    </>
   );
