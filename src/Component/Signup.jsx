@@ -8,6 +8,7 @@ import { Navigate,useNavigate } from 'react-router-dom';
 import * as firebase from "firebase/app"
 const Signup = () => {
     const navi=useNavigate()
+    const [err,setErr]=useState("")
     const [email,setEmail]=useState('')
     const [name,setname]=useState('')
     const [password,setPassword]=useState('')
@@ -16,6 +17,14 @@ const Signup = () => {
     const register = e => {
         console.log("register")
         console.log(email,password)
+        if(!email || !password || !name)
+        {
+            setErr("all details are necessary")
+        }
+        else 
+        {
+
+        
         createUserWithEmailAndPassword(auth,
              email, password,name)
   .then((userCredential) => {
@@ -26,6 +35,7 @@ const Signup = () => {
   })
   .catch((error) => {
     const errorCode = error.code;
+    setErr(error.message)
     const errorMessage = error.message;
     // const errorMessage="Something worng";
     // ..
@@ -34,6 +44,7 @@ const Signup = () => {
   setPassword('')
   setConfirmPassword('')
   setname('')
+}
 
 }
   return (
@@ -84,6 +95,8 @@ const Signup = () => {
                         class="w-full rounded-full font-bold text-center py-3 rounded bg-green-500 text-white hover:bg-green-dark focus:outline-none my-1"
                         onClick={register}
                     >Create Account</button>
+
+                    <div className="text-center text-red-700 text-2xl p-2 h1">{err}</div>
 
                     <div class="text-center text-sm text-grey-dark mt-4">
                         By signing up, you agree to the 

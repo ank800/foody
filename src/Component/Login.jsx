@@ -10,6 +10,7 @@ const Login = () => {
     
     const [email,setemail]=useState('')
     const [password,setpassword]=useState('')
+    const [err,setErr]=useState('')
     const [error,setError]=useState('')
     const [allentry ,setallentry]=useState([])
     const [login ,islogin]=useState(false)
@@ -21,11 +22,11 @@ const Login = () => {
         setemail('')
         setpassword('')
         if(!email){
-            alert("something went wrong for email")
+            setErr("Email is missing")
             
          }
         if (!password){
-            alert("Please fill the password")
+            setErr("Password missing")
         }
     }
     
@@ -34,11 +35,11 @@ const Login = () => {
         e.preventDefault()
         console.log("Login")
         if(!email){
-            alert("something went wrong for email")
+            setErr("Email is missing")
             
          }
         else if (!password){
-            alert("Please fill the password")
+            setErr("Password missing")
         }
         else {
 
@@ -53,7 +54,7 @@ const Login = () => {
              
               
             })
-          .catch(err => alert(err.message))
+          .catch(err => setErr(err.message))
         }else{
            
            // redirect to code comes hear     
@@ -65,7 +66,7 @@ const Login = () => {
             
         }
         })
-        .catch(err => console.log("error"))
+        .catch(err => setErr(err.message))
     }
       }
       
@@ -104,6 +105,7 @@ const Login = () => {
                         onClick={Login}
                         
                     >Log in</button>
+                    <div className="text-center text-lg text-red-700 p-3">{err}</div>
 
                     <div class="text-center text-sm text-grey-dark mt-4">
                         By log in, you agree to the 

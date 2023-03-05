@@ -27,7 +27,6 @@ const Dashboard = () => {
   {/* <span className='absolute right-4  pr-5 text-green-800 '>
   <Link to="/login"> <p className='text-lg font-bold text-white bg-black px-2 border-2'>Login </p> </Link>
   <Link to="/signup"> <p className='text-lg font-bold text-white borer-2 bg-black px-2'>Sign up </p> </Link>
-
   </span> */}
   
 </div>
@@ -43,9 +42,7 @@ const Dashboard = () => {
      <Link to="/NorthIndian"><button className='ml-2 border-2 py-2 text-lg font-bold px-5 truncate'>Norht Indian</button></Link>
      
      
-
      
-
      </nav> */}
       
     </div>
