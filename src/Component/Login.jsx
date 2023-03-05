@@ -33,6 +33,16 @@ const Login = () => {
         
         e.preventDefault()
         console.log("Login")
+        if(!email){
+            alert("something went wrong for email")
+            
+         }
+        else if (!password){
+            alert("Please fill the password")
+        }
+        else {
+
+       
         signInWithEmailAndPassword(auth, email, password)
         .then(() => {
           if(!auth.currentUser.emailVerified) {
@@ -56,6 +66,7 @@ const Login = () => {
         }
         })
         .catch(err => console.log("error"))
+    }
       }
       
 
