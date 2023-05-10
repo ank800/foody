@@ -78,7 +78,7 @@ const Lunch = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.dalmakhani}</h1>
       <h1>Total: {num*items.dalmakhani}</h1>
-      <Link to="/Delivery"><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+      <Link to="/Delivery" state={{price:"100"}}><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
     </div>
 
     <div className=' max-w-sm rounded overflow-hidden shadow-lg mx-5 '>
@@ -94,7 +94,7 @@ const Lunch = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.bhindi}</h1>
       <h1>Total: {num2*items.bhindi}</h1>
-      <Link to="/Delivery"><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+      <Link to="/Delivery" state={{price:"100"}}><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
     </div>
 
@@ -110,7 +110,7 @@ const Lunch = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.Rajma}</h1>
       <h1>Total: {num3*items.Rajma}</h1>
-      <Link to="/Delivery"><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+      <Link to="/Delivery" state={{price:"100"}}><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
     </div>
 
     <div className=' max-w-sm rounded overflow-hidden shadow-lg mx-5'>
@@ -125,7 +125,7 @@ const Lunch = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.dosa}</h1>
       <h1>Total: {num4*items.dosa}</h1>
-      <Link to="/Delivery"><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+      <Link to="/Delivery" state={{price:"100"}}><h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
     </div>
     </div>
     </div>

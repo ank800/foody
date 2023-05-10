@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
-import {signInWithEmailAndPassword, sendEmailVerification} from 'firebase/auth'
-import {auth} from './Fire'
-import Welcome from './Welcome'
-import Dashboard from './Dashboard';
-import { Link } from 'react-router-dom'
-import { Navigate,useNavigate } from 'react-router-dom';
+
+import {useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const Login = () => {
+const Adminlogin = () => {
     
     const [email,setemail]=useState('')
     const [password,setpassword]=useState('')
@@ -16,7 +12,7 @@ const Login = () => {
     const [allentry ,setallentry]=useState([])
     const [login ,islogin]=useState(false)
     const navi=useNavigate()
-    // This code for the firebase
+
     // function submithandler(e){
     //     e.preventDefault()
     //     const newentry={email:email,password:password}
@@ -87,12 +83,12 @@ const Login = () => {
         else {
             console.log(email,password)
             try {
-                const response = await axios.post('http://localhost:8000/login', {
+                const response = await axios.post('http://localhost:8000/adminlogin', {
                   username: email,
                   password: password
                 });
                 alert("Login successfully")
-                navi('/Welcome')
+                navi('/admindashboard')
                 console.log(response); // Do something with the response
               } catch (error) {
                 console.log(error); // Handle any errors that occur
@@ -107,7 +103,7 @@ const Login = () => {
          <div class="bg-pink-300 min-h-screen flex flex-col">
             <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
                 <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
-                    <h1 class="mb-8 text-3xl text-center">Log in</h1>
+                    <h1 class="mb-8 text-3xl text-center">Admin Log in</h1>
                     
 
                     <input 
@@ -162,4 +158,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Adminlogin

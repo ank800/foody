@@ -80,7 +80,7 @@ const SouthIndian = () => {
       
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.Dosa}/1kg</h1>
     <h1>Total: {num*items.Dosa}</h1>
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.Dosa)*num)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.Dosa)*num)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
     
       </div>
@@ -100,7 +100,7 @@ const SouthIndian = () => {
       
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.Idli}/1kg</h1>
     <h1>Total: {num*items.Idli}</h1>
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.Idli)*num2)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.Idli)*num2)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
 
 
@@ -121,7 +121,7 @@ const SouthIndian = () => {
       
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.biryani}/1kg</h1>
     <h1>Total: {num3*items.biryani}</h1>
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.biryani)*num3)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+(items.biryani)*num3)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
     
     
@@ -142,7 +142,7 @@ const SouthIndian = () => {
       
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.chatni}/1kg</h1>
     <h1>Total: {num4*items.chatni}</h1>
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+ (items.chatni)*num4)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button onClick={()=>alert("Total Amount:"+ (items.chatni)*num4)} className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
     
       </div>

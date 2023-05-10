@@ -18,6 +18,8 @@ import DeliveryAddress from './Component/DeliveryAddress';
 import Payment from './Component/Payment';
 import Thanks from './Component/Thanks';
 import Welcome from './Component/Welcome';
+import Admindashboard from './Component/Admin/Admindashboard';
+import Adminlogin from './Component/Admin/Adminlogin';
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
    <Route path="/Payment" element={<Payment/>}/>
    <Route path='/Thanks' element={<Thanks/>}/>
    <Route path='/Welcome' element={<Welcome/>}/>
+   <Route path='/admindashboard' element={<Admindashboard/>}/>
+   <Route path='/adminlogin' element={<Adminlogin/>}/>
 
    </Routes>
    </HashRouter>

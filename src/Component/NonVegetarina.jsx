@@ -80,7 +80,7 @@ const NonVegetarina = () => {
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: Rs {items.bchicken}</h1>
     <h1>Total: {num*items.bchicken}</h1>
     
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
       </div>
 
       <div className='mx-5 max-w-sm rounded overflow-hidden shadow-lg'>
@@ -95,7 +95,7 @@ const NonVegetarina = () => {
         
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.chickenfry}</h1>
     <h1>Total: {num2*items.chickenfry}</h1>
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
       </div>
       <div className=' max-w-sm rounded overflow-hidden shadow-lg'>
         <img className='w-60 h-44' src={mutton} alt="" />
@@ -110,7 +110,7 @@ const NonVegetarina = () => {
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.mkorma}</h1>
     <h1>Total: {num3*items.mkorma}</h1>
     
-    <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
       </div>
       <div className='mx-5 max-w-sm rounded overflow-hidden shadow-lg'>
@@ -126,7 +126,7 @@ const NonVegetarina = () => {
     <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.chickenfry}</h1>
     <h1>Total: {num4*items.cfinger}</h1>
     
-    <Link to="/Delivery"><Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link></Link>
+     <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
       </div>
 
       </div>

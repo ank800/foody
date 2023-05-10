@@ -79,7 +79,7 @@ const Dinner = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS 80</h1>
       <h1>Total: {num*items.idli}</h1>
-       <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+       <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
         </div>
         <div className='mx-5 max-w-sm rounded overflow-hidden shadow-lg'>
@@ -93,7 +93,7 @@ const Dinner = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS 80</h1>
       <h1>Total: {num2*items.vchicken}</h1>
-       <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+       <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
         </div>
         <div className='max-w-sm rounded overflow-hidden shadow-lg'>
@@ -107,7 +107,7 @@ const Dinner = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.bchicken}</h1>
       <h1>Total: {num3*items.bchicken}</h1>
-       <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+       <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
         </div>
         <div className='mx-5 max-w-sm rounded overflow-hidden shadow-lg'>
@@ -121,7 +121,7 @@ const Dinner = () => {
      </div>
       <h1 className='px-2 font-bold text-2xl text-red-500'>Price: RS {items.moongdal}</h1>
       <h1>Total: {num4*items.moongdal}</h1>
-       <Link to="/Delivery"> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
+       <Link to="/Delivery" state={{price:"100"}}> <h1 className='text-right mb-5 mt-2 mr-2'><button className='text-2xl font-bold text-red-500 border-2 px-2'>Order Now</button></h1></Link>
 
         </div>
 

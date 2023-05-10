@@ -3,7 +3,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from './Fire'
 import { Navigate,useNavigate } from 'react-router-dom';
 
-
+import axios from 'axios';
 
 import * as firebase from "firebase/app"
 const Signup = () => {
@@ -14,39 +14,66 @@ const Signup = () => {
     const [password,setPassword]=useState('')
     const [cpassword,setConfirmPassword]=useState('')
     const [error,setError]=useState('something woring')
-    const register = e => {
-        console.log("register")
-        console.log(email,password)
-        if(!email || !password || !name)
-        {
-            setErr("all details are necessary")
-        }
-        else 
-        {
+    // this code for firebase
+//     const register = async(e) => {
+//         console.log("register")
+//         console.log(email,password)
+//         if(!email || !password || !name)
+//         {
+//             setErr("all details are necessary")
+//         }
+//         else 
+//         {
 
         
-        createUserWithEmailAndPassword(auth,
-             email, password,name)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-    navi('/')
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    setErr(error.message)
-    const errorMessage = error.message;
-    // const errorMessage="Something worng";
-    // ..
-  });
-  setEmail('')
-  setPassword('')
-  setConfirmPassword('')
-  setname('')
-}
+//         createUserWithEmailAndPassword(auth,
+//              email, password,name)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     // ...
+//     navi('/')
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     setErr(error.message)
+//     const errorMessage = error.message;
+//     // const errorMessage="Something worng";
+//     // ..
+//   });
+//   setEmail('')
+//   setPassword('')
+//   setConfirmPassword('')
+//   setname('')
+// }
 
-}
+// }
+// This code for nodejs mongodb
+
+const register = async (e) => {
+    console.log("register")
+    console.log(email, password)
+    if (!email || !password || !name) {
+      setErr("all details are necessary")
+    }
+    else {
+      console.log(email, password)
+      try {
+        const response = await fetch('http://localhost:8000/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username: email, password: password })
+        });
+        const data = await response.json(); // Convert the response to JSON format
+        alert("Signup successfully")
+       
+        console.log(data); // Do something with the data
+      } catch (error) {
+        console.log(error); // Handle any errors that occur
+      }
+    }
+  }
+  
   return (
     <>
         
