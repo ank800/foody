@@ -20,6 +20,7 @@ import Thanks from './Component/Thanks';
 import Welcome from './Component/Welcome';
 import Admindashboard from './Component/Admin/Admindashboard';
 import Adminlogin from './Component/Admin/Adminlogin';
+import BreakfastData from './Component/Admin/BreakfastData';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
    <Route path='/Welcome' element={<Welcome/>}/>
    <Route path='/admindashboard' element={<Admindashboard/>}/>
    <Route path='/adminlogin' element={<Adminlogin/>}/>
+   <Route path='/breakinfo' element={<BreakfastData/>}/>
 
    </Routes>
    </HashRouter>

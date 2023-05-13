@@ -14,6 +14,17 @@ const OrderInfo = () => {
     getUsers();
   }, []);
 
+  async function deleteOrder(id) {
+    alert(id)
+    try {
+      const result = await axios.delete(`http://localhost:8000/orders/${id}`);
+      console.log(result);
+      setOrders(orders.filter((user) => user._id !== id));
+      alert("Order rejected and removed from the database")
+    } catch (error) {
+      console.error(error);
+    }
+  }
   return (
     <div>
     <h1 className='text-center text-white text-4xl'>Ordr Info</h1>
@@ -38,10 +49,10 @@ const OrderInfo = () => {
               <td className='border'>{order.address}</td>
               <td className='border'>{order.pin}</td>
               <td className='border'>
-                <button className='bg-green-500 p-3 m-1 rounded-md'>Accept</button>
+                <button className='bg-green-500 p-3 m-1 rounded-md' onClick={()=>alert("Order Accepted ")}>Accept</button>
               </td>
               <td className='border'>
-                <button className='bg-red-500 p-3 m-1 rounded-md'>Rejected</button>
+                <button className='bg-red-500 p-3 m-1 rounded-md' onClick={() => deleteOrder(order._id)}>Rejected</button>
               </td>
             </tr>
           ))}
