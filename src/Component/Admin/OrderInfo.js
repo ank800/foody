@@ -27,7 +27,7 @@ const OrderInfo = () => {
   }
   return (
     <div>
-    <h1 className='text-center text-white text-4xl'>Ordr Info</h1>
+    <h1 className='text-center text-white text-4xl'>Order Info</h1>
       <table className='border-separate border border-red-400'>
         <thead>
           <tr>
@@ -52,7 +52,7 @@ const OrderInfo = () => {
                 <button className='bg-green-500 p-3 m-1 rounded-md' onClick={()=>alert("Order Accepted ")}>Accept</button>
               </td>
               <td className='border'>
-                <button className='bg-red-500 p-3 m-1 rounded-md' onClick={() => deleteOrder(order._id)}>Rejected</button>
+                <button className='bg-red-500 p-3 m-1 rounded-md' onClick={() => deleteOrder(order._id)}>Reject</button>
               </td>
             </tr>
           ))}

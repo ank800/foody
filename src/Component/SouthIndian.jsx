@@ -62,7 +62,7 @@ const SouthIndian = () => {
       <Header/>
     
     <div className='bg-pink-300 h-full sm:h-screen'>
-    <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to Fast Food</h1>
+    <h1 className='font-bold text-4xl text-red-600 text-center'>Welcome to SouthIndian Food</h1>
     <div className='flex mt-5 w-full'>
       <div className='container w-full mx-auto  flex flex-col sm:flex-row  items-center justify-center'>
       <div className=' max-w-sm rounded overflow-hidden shadow-lg'>

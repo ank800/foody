@@ -16,62 +16,7 @@ const Login = () => {
     const [allentry ,setallentry]=useState([])
     const [login ,islogin]=useState(false)
     const navi=useNavigate()
-    // This code for the firebase
-    // function submithandler(e){
-    //     e.preventDefault()
-    //     const newentry={email:email,password:password}
-    //     setallentry([...allentry,newentry])
-    //     setemail('')
-    //     setpassword('')
-    //     if(!email){
-    //         setErr("Email is missing")
-            
-    //      }
-    //     if (!password){
-    //         setErr("Password missing")
-    //     }
-    // }
-    
-    // const Login = e => {
-        
-    //     e.preventDefault()
-    //     console.log("Login")
-    //     if(!email){
-    //         setErr("Email is missing")
-            
-    //      }
-    //     else if (!password){
-    //         setErr("Password missing")
-    //     }
-    //     else {
-
-       
-    //     signInWithEmailAndPassword(auth, email, password)
-    //     .then(() => {
-    //       if(!auth.currentUser.emailVerified) {
-    //         sendEmailVerification(auth.currentUser)
-    //         .then(() => {
-                
-    //             console.log("errors")
-             
-              
-    //         })
-    //       .catch(err => setErr(err.message))
-    //     }else{
-           
-    //        // redirect to code comes hear     
-    //             console.log("Login succssfully")
-    //                 alert('login')
-    //                 islogin(true)
-    //                 navi('/Welcome')
-            
-            
-    //     }
-    //     })
-    //     .catch(err => setErr(err.message))
-    // }
-    //   }
-    //   Now the code changes for the node js and mongodb
+  
 
      const Login =async (e )=> {
         

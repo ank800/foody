@@ -17,11 +17,7 @@ function Breakfast() {
     <div className="grid grid-cols-4 gap-4">
       {breakfastItems.map(item => (
         <div key={item.id} className="card bg-gray-100">
-          {/* <img src={item.image} alt={item.name} className="card-image" />
-          <div className="card-details">
-            <h3 className="card-title">{item.name}</h3>
-            <p className="card-price">${item.price}</p>
-          </div> */}
+         
 
           <div className='max-w-sm rounded overflow-hidden shadow-lg'>
           <img className='w-60 h-44' src={item.image} alt="" />

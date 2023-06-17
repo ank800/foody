@@ -33,7 +33,7 @@ const Admindashboard = () => {
     <div className='bg-gray-500 h-screen p-5'>
     {/* header */}
     <h1 className='text-white text-center text-5xl'>Admin Dashboard</h1>
-    <Link to="/breakinfo"><button className='px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600'>BreakFst info page</button></Link>
+    <Link to="/breakinfo"><button className='px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600'>BreakFast info page</button></Link>
       <h1>User List</h1>
       <table className='border-separate border border-red-400 '>
         <thead>

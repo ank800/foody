@@ -66,7 +66,7 @@ const Lunch = () => {
       <h1 className='text-center text-red-600 font-bold text-4xl'> Welcome to Lunch Order</h1>
       <div className='flex mt-5  w-full'>
     <div class="container w-full mx-auto flex  flex-col sm:flex-row  items-center justify-center ">
-    <div className='bg-sky-400 max-w-sm rounded overflow-hidden shadow-lg '>
+    <div className='bg-pink-300 max-w-sm rounded overflow-hidden shadow-lg '>
       <img className='w-60 h-44' src={dal} alt="" />
      
       <h1 className='px-2 font-bold text-2xl text-red-500'>Dal Makhani</h1>
